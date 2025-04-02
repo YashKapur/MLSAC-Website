@@ -376,6 +376,11 @@ section {
     margin: 0 auto;
 }
 
+.section-title {
+    margin-bottom: 2rem;
+    text-align: center;   
+}
+
 .event-card {
     position: relative;
     border-radius: 20px;
