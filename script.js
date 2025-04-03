@@ -132,3 +132,21 @@ document.querySelectorAll('.leadership-card').forEach(card => {
         linkedinBtn.style.opacity = '0';
     });
 });
+
+function toggleTenure(id) {
+    const content = document.getElementById(id);
+  
+    // Close other open tenures
+    document.querySelectorAll(".tenure-content").forEach((el) => {
+      if (el.id !== id) {
+        el.style.maxHeight = null;
+      }
+    });
+  
+    // Toggle selected tenure
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
